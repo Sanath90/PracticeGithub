@@ -1,0 +1,23 @@
+name: practice Github actions
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main 
+  workflow_dispatch:
+  
+jobs:
+  Run_sample_script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: checkout my repo
+        run: echo "hello sanath"
+        shell: bash
+  
+
+  
+  
