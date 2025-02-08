@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: checkout my repo
         run: echo "hello sanath"
-        shell: bash
+
   
 
   
