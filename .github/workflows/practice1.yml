@@ -15,6 +15,9 @@ jobs:
       - name: checkout my repo
         run: echo "${{ github.event.inputs.name }}"
 
+      - name: Print input name
+        run: echo "${{ inputs.name }}
+
   
 
   
