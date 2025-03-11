@@ -8,6 +8,10 @@ on:
     branches:
       - main 
   workflow_dispatch:
+    inputs:
+        name:
+          type: string
+          default: "sanath"
   
 jobs:
   Run_sample_script:
@@ -15,7 +19,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: checkout my repo
-        run: echo "hello sanath"
+        run: echo "${{ inputs.name }}"
 
   
 
