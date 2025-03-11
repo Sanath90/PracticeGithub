@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: checkout my repo
-        run: echo "${{ inputs.name }}"
+        run: echo "${{ github.event.inputs.name }}"
 
   
 
