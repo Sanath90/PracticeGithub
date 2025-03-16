@@ -10,7 +10,10 @@ on:
 jobs:
   Run_sample_script:
     runs-on: ubuntu-latest
-    steps:
+    permissions:
+      id-token: write
+      contents: read
+    steps:    
       - uses: actions/checkout@v2
       - name: checkout my repo
         run: echo "${{ github.event.inputs.name }}"
