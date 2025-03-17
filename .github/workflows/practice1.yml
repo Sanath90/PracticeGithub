@@ -29,7 +29,7 @@ jobs:
         run: aws sts get-caller-identity
 
       - name: Run Terraform Commands
-        uses: ./.github/workflows/terraform_commands
+        uses: ./.github/actions/terraform_commands
 
 
 
