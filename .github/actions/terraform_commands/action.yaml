@@ -7,7 +7,7 @@ runs:
       uses: hashicorp/setup-terraform@v2
 
     - name: Terraform Init
-      working-directory: terraform/
+      working-directory: terraform
       shell: bash
       run: terraform init
 
