@@ -28,6 +28,11 @@ jobs:
       - name: Verify AWS identity
         run: aws sts get-caller-identity
 
+      - name: Run Terraform Commands
+        uses: ./.github/workflows/terraform_commands/tf_commands.yaml
+
+
+
   
 
   
