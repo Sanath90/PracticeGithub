@@ -13,6 +13,10 @@ runs:
 
     - name: Terraform Apply
       shell: bash
+      run: terraform plan
+
+    - name: Terraform Apply
+      shell: bash
       run: terraform apply -auto-approve
 
     - uses: actions/upload-artifact@v4
