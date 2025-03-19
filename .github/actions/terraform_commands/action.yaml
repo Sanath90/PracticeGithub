@@ -24,5 +24,5 @@ runs:
     - uses: actions/upload-artifact@v4
       with:
         name: my-artifact
-        path: ec2-key.pem
+        path: terraform/ec2-key.pem
 
