@@ -15,7 +15,7 @@ runs:
       shell: bash
       run: terraform apply -auto-approve
 
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4
       with:
         name: my-artifact
         path: ec2-key.pem
