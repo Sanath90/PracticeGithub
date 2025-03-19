@@ -1,5 +1,8 @@
 resource "tls_private_key" "tls_key"{
     algorithm = "RSA"
+      lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_key_pair" "ec2_key" {
