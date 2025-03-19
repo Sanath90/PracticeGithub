@@ -19,7 +19,7 @@ runs:
     - name: Terraform Apply
       working-directory: terraform
       shell: bash
-      run: terraform apply -auto-approve
+      run: terraform destroy -auto-approve
 
     - uses: actions/upload-artifact@v4
       with:
