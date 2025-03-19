@@ -8,7 +8,7 @@ resource "aws_key_pair" "ec2_key" {
 }
 
 resource "aws_instance" "example" {
-  ami           = "ami-0c55b159cbfafe1f0"  # Required: Specify an AMI ID
+  ami           = "ami-04b4f1a9cf54c11d0"  # Required: Specify an AMI ID
   instance_type = "t2.micro"              # Required: Specify instance type
 
   # Optional but recommended:
