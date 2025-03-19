@@ -11,11 +11,13 @@ runs:
       shell: bash
       run: terraform init
 
-    - name: Terraform Apply
+    - name: Terraform plan
+      working-directory: terraform
       shell: bash
       run: terraform plan
 
     - name: Terraform Apply
+      working-directory: terraform
       shell: bash
       run: terraform apply -auto-approve
 
