@@ -15,10 +15,8 @@ runs:
       shell: bash
       run: terraform apply -auto-approve
 
-    - name: Store EC2 Key Pair as an Artifact
-      uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v1
       with:
-        name: ec2-key
+        name: my-artifact
         path: ec2-key.pem
-        retention-days: 1
 
