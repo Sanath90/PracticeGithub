@@ -9,7 +9,7 @@ runs:
     - name: Terraform Init
       working-directory: terraform
       shell: bash
-      run: terraform init
+      run: terraform init -backend-config=backend.hcl
 
     - name: Terraform plan
       working-directory: terraform
@@ -19,7 +19,7 @@ runs:
     - name: Terraform Apply
       working-directory: terraform
       shell: bash
-      run: terraform destroy -auto-approve
+      run: terraform apply -auto-approve
 
     - uses: actions/upload-artifact@v4
       with:

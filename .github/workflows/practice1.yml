@@ -28,8 +28,11 @@ jobs:
       - name: Verify AWS identity
         run: aws sts get-caller-identity
 
-      - name: Run Terraform Commands
-        uses: ./.github/actions/terraform_commands
+      # - name: Run Terraform Commands
+      #   uses: ./.github/actions/terraform_commands
+
+      - name: Run Ansible Commands
+        uses: ./.github/actions/ansible_commands
 
 
 

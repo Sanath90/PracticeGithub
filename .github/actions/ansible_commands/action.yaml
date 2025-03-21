@@ -1,0 +1,13 @@
+name: Run ansible Commands
+runs:
+  using: "composite"
+  steps:
+    - name: install ansible
+      shell: bash
+      run: |
+        sudo apt update -y
+        sudo apt install -y ansible
+
+    - name: Run ansible
+      shell: bash
+      run: ansible-playbook site.yaml
