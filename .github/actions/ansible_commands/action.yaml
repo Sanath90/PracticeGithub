@@ -13,5 +13,6 @@ runs:
         python3 --version
 
     - name: Run ansible
+      working-directory: ansible
       shell: bash
       run: ansible-playbook site.yaml
