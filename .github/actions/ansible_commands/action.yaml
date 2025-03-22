@@ -8,11 +8,7 @@ runs:
         sudo apt update -y
         sudo apt install -y ansible
         sudo apt update -y
-        sudo apt install -y awscli
-        aws --version
-        mkdir -p ~/.aws
-        echo "[default]" > ~/.aws/config
-        echo "region=us-east-1" >> ~/.aws/config
+        ansible-galaxy install amazon.aws.ssm
         sudo apt install -y python3 python3-pip
         python3 --version
 
