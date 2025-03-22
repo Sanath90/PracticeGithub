@@ -1,0 +1,15 @@
+--- 
+- name: connect with instance 
+  set_fact:
+    ansible_aws_ssm_instance_id: "i-0b78337a3b693096e"
+
+- name: Install nginx
+  shell: "sudo apt install -y nginx"
+
+- name: start nginx
+  shell: "sudo systemctl start nginx" 
+
+
+- name: Enable nginx
+  shell: "sudo systemctl enable nginx" 
+
