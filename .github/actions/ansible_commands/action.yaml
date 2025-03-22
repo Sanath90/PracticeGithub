@@ -8,7 +8,7 @@ runs:
         sudo apt update -y
         sudo apt install -y ansible
         sudo apt update -y
-        ansible-galaxy install amazon.aws.ssm
+        ansible-galaxy install amazon.aws.ssm --ignore-errors
         sudo apt install -y python3 python3-pip
         python3 --version
 
